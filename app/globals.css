@@ -831,6 +831,31 @@ blockquote {
   color: rgba(255, 255, 255, 0.9);
   font: 1.08rem/1.6 Georgia;
 }
+
+/* Keep the complete hero compositions visible on wide Vercel/Next viewports.
+   The source artwork already includes intentional negative space for copy. */
+@media (min-width: 801px) {
+  .hero > img {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+  }
+
+  .page-hero,
+  .speaking-hero,
+  .media-hero {
+    background: #071713;
+  }
+
+  .page-hero img,
+  .speaking-hero > img,
+  .media-hero > img {
+    object-fit: contain;
+    object-position: right center;
+  }
+}
 .media-kit-hero {
   min-height: calc(100vh - 78px);
   position: relative;
