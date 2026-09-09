@@ -241,7 +241,7 @@ em {
       rgba(8, 19, 17, 0.74) 42%,
       rgba(8, 19, 17, 0.2) 100%
     ),
-    url("/dr-khanh-hero.png");
+    url("/dr-khanh-hero.jpg");
   background-size: cover;
   background-position: center 24%;
   filter: blur(14px) saturate(0.7);
@@ -847,27 +847,27 @@ blockquote {
   }
 
   .hero {
-    background-image: url("/dr-khanh-hero.png");
+    background-image: url("/dr-khanh-hero.jpg");
   }
 
   .about-hero {
-    background-image: url("/dr-khanh-about.png");
+    background-image: url("/dr-khanh-about.jpg");
   }
 
   .speaking-hero {
-    background-image: url("/dr-khanh-media-hero.png");
+    background-image: url("/dr-khanh-media-hero.jpg");
   }
 
   .media-hero {
-    background-image: url("/dr-khanh-speaking-hero.png");
+    background-image: url("/dr-khanh-speaking-hero.jpg");
   }
 
   .expertise-hero {
-    background-image: url("/dr-khanh-expertise-hero.png");
+    background-image: url("/dr-khanh-expertise-hero.jpg");
   }
 
   .contact-hero {
-    background-image: url("/dr-khanh-contact-hero.png");
+    background-image: url("/dr-khanh-contact-hero.jpg");
   }
 
   .hero > img,

@@ -22,7 +22,7 @@ export default function Expertise() {
   const [featured, ...articles] = expertisePosts;
   return <Shell><main>
     <section className="simple-hero media-hero expertise-hero">
-      <img src="/dr-khanh-expertise-hero.png" alt="Dr. Khanh Nguyen at a peptide science conference" />
+      <img src="/dr-khanh-expertise-hero.jpg" alt="Dr. Khanh Nguyen at a peptide science conference" />
       <div className="media-hero-shade" />
       <div className="media-hero-content">
         <p className="eyebrow light">Expertise</p>

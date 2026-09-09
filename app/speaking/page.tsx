@@ -104,7 +104,7 @@ export default function Speaking() {
       <main>
         <section className="simple-hero speaking-hero">
           <img
-            src="/dr-khanh-media-hero.png"
+            src="/dr-khanh-media-hero.jpg"
             alt="Dr. Khanh Nguyen speaking at an international medical conference"
           />
           <div className="speaking-hero-shade" />

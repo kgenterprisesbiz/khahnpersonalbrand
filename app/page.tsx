@@ -41,7 +41,7 @@ export default function Home() {
       <main>
         <section className="hero">
           <img
-            src="/dr-khanh-hero.png"
+            src="/dr-khanh-hero.jpg"
             alt="Dr. Khanh Nguyen standing confidently in her Austin clinic"
           />
           <div className="hero-shade" />

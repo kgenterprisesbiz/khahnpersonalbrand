@@ -11,7 +11,7 @@ export default function Contact() {
   return <Shell><main>
     <section className="simple-hero media-hero contact-hero">
       <img
-        src="/dr-khanh-contact-hero.png"
+        src="/dr-khanh-contact-hero.jpg"
         alt="Dr. Khanh Nguyen in a podcast interview with Dr. Daniel Pompa"
       />
       <div className="media-hero-shade" />

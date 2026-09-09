@@ -19,7 +19,7 @@ export default function About() {
       <main>
         <section className="page-hero photo about-hero">
           <img
-            src="/dr-khanh-about.png"
+            src="/dr-khanh-about.jpg"
             alt="Dr. Khanh Nguyen in a bright consultation room at Austin Regenerative Therapy"
           />
           <div>
