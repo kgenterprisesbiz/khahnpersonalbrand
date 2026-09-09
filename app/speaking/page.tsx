@@ -11,6 +11,10 @@ export const metadata: Metadata = {
 
 const topics = [
   [
+    "What Makes the Cell Fail?",
+    "The question that moved Dr. Nguyen from crisis medicine to root-cause, regenerative care—and why better health decisions begin by looking upstream.",
+  ],
+  [
     "Plasma Exchange & Healthspan",
     "A clear look at therapeutic plasma exchange and young plasma: where the science stands, how the protocols differ, and what patients should ask.",
   ],
@@ -19,8 +23,8 @@ const topics = [
     "How biomarkers, pathways, and individual goals can inform a more precise—and more responsible—approach to peptide therapy.",
   ],
   [
-    "Cellular Medicine, Without the Hype",
-    "Stem cells, VSELs, exosomes, and treatment sequencing explained with the rigor a fast-moving field demands.",
+    "The Right Therapy, in the Right Sequence",
+    "Why regenerative medicine should begin with the patient’s biology, foundational health, and goals—not the treatment dominating the conversation.",
   ],
   [
     "From Burnout to Reinvention",
@@ -29,10 +33,6 @@ const topics = [
   [
     "Hormones, Women & Longevity",
     "A practical conversation about hormonal change, energy, sexual health, and helping women feel like themselves through every decade.",
-  ],
-  [
-    "Resilience by Design",
-    "Lessons from escaping Vietnam by boat, beginning again as a refugee, and turning adversity into purposeful leadership.",
   ],
 ];
 

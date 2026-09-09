@@ -59,28 +59,46 @@ export default function About() {
               Eventually, healing became deeply personal. Dr. Nguyen faced her
               own autoimmune illness while caring for a son with a rare
               neurological condition. Those experiences pushed her to ask a
-              question crisis medicine rarely has time to explore: what if we
-              could act earlier, work at the cellular level, and help the body
-              function better before illness takes over?
+              question crisis medicine rarely has time to explore: what made
+              the cell fail in the first place? She stopped looking only at the
+              diagnosis and began looking upstream at the conditions that allow
+              the body to heal, repair, and adapt.
             </p>
             <p>
-              The answer led her beyond crisis care and into regenerative and
+              She became what she calls “patient number one”—studying the
+              science, experiencing the approaches personally, and refusing to
+              recommend something simply because it was new or impressive. Her
+              standard remains practical: understand the mechanism, examine the
+              evidence and its limits, put safety first, and ask whether the
+              approach is responsible enough for the people she loves.
+            </p>
+            <p>
+              That shift led her beyond crisis care and into regenerative and
               longevity medicine. In 2018, she founded Austin Regenerative
               Therapy, creating the kind of practice she wished more patients
               could find—one built on evidence, curiosity, and the courage to
-              look deeper. Her concierge approach combines personalized
-              diagnostics, hormone optimization, and functional strategies with
-              peptide therapy and regenerative modalities including Young Plasma
-              Exchange, VSEL stem cells, exosomes, and NAD+.
+              look deeper. She begins with the person, not the product: their
+              biology, history, goals, and foundational health. Only then does
+              she determine which therapies belong in the plan and in what
+              sequence.
             </p>
             <p>
-              Her work targets the Hallmarks of Aging with one practical goal:
-              helping patients extend vitality, performance, and healthspan.
-              Today, Dr. Nguyen is a proud SSRP Fellow, national speaker,
-              faculty member, and advocate for whole-person, future-forward
-              health. She brings discernment to the hype, humanity to the
-              science, and a survivor’s understanding of what it means to begin
-              again.
+              Her approach may include personalized diagnostics, lifestyle and
+              metabolic strategies, hormone optimization, peptides, Young
+              Plasma Exchange, VSEL stem cells, exosomes, and NAD+. The tools
+              may be advanced, but the goal is grounded: targeting the Hallmarks
+              of Aging to help patients extend vitality, performance, and
+              healthspan.
+            </p>
+            <p>
+              Education is part of the care. Dr. Nguyen wants patients to
+              understand the reasoning, evidence, limitations, and alternatives
+              behind a recommendation so they can participate meaningfully in
+              decisions about their health. Today, she is a proud SSRP Fellow,
+              national speaker, faculty member, and advocate for whole-person,
+              future-forward health. She brings discernment to the hype,
+              humanity to the science, and a survivor’s understanding of what
+              it means to begin again.
             </p>
           </Reveal>
         </article>

@@ -21,18 +21,18 @@ const conversations = [
 const steps = [
   [
     "01",
-    "Understand what is changing",
-    "Get a clear, evidence-aware view of regenerative and longevity medicine—without the buzzwords.",
+    "Ask what is driving the problem",
+    "Look beyond symptoms to understand what is happening at the cellular and whole-person level.",
   ],
   [
     "02",
-    "Know what applies to you",
-    "Move beyond one-size-fits-all advice and understand the role of personal history, testing, and goals.",
+    "Strengthen the foundation",
+    "Address sleep, nutrition, movement, stress, hormones, metabolism, and the factors that determine whether treatment can work.",
   ],
   [
     "03",
-    "Make informed choices",
-    "Ask better questions, separate possibility from hype, and take the next step with confidence.",
+    "Sequence what comes next",
+    "Choose therapies based on the individual, the evidence, and the right order—not a one-size-fits-all protocol.",
   ],
 ];
 export default function Home() {
@@ -94,8 +94,8 @@ export default function Home() {
             <p>
               The promises are everywhere. The clarity? Not so much. Dr. Nguyen
               brings decades of medical training, firsthand clinical experience,
-              and honest perspective to one essential question: what can help
-              you live better—not just longer?
+              and honest perspective to a better starting question: what is
+              causing the body—and the cell—to struggle in the first place?
             </p>
             <Link className="text-link" href="/about">
               Meet Dr. Nguyen →
@@ -103,7 +103,7 @@ export default function Home() {
           </Reveal>
         </section>
         <section className="guide-steps section">
-          <p className="eyebrow">From confusion to clarity</p>
+          <p className="eyebrow">Her approach</p>
           <div className="topic-grid">
             {steps.map((s, i) => (
               <Reveal key={s[0]} className="topic-card" delay={i * 0.08}>
@@ -113,6 +113,24 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+        </section>
+        <section className="clarity section philosophy-statement">
+          <Reveal>
+            <p className="eyebrow">Foundation before intervention</p>
+            <h2>
+              Advanced medicine works best
+              <br />
+              <em>when the fundamentals work with it.</em>
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p>
+              Sleep, nutrition, movement, stress, metabolic health, hormones,
+              and human connection are not the boring part of longevity
+              medicine. They create the conditions that allow everything else
+              to matter.
+            </p>
+          </Reveal>
         </section>
         <section className="story-split section">
           <Reveal className="story-statement">
