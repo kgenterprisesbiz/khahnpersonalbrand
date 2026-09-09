@@ -1,0 +1,4 @@
+import type { MetadataRoute } from "next";
+import { pressFeatures } from "@/lib/press-features";
+import { expertisePosts } from "@/lib/expertise-posts";
+export default function sitemap():MetadataRoute.Sitemap { const base="https://dr-khanh-nguyen.kimgarstbiz.chatgpt.site"; const pages=["","/about","/speaking","/media","/expertise","/contact","/media-kit"].map(p=>({url:`${base}${p}`,lastModified:new Date(),changeFrequency:p==="/expertise"?"weekly" as const:"monthly" as const,priority:p===""?1:.8})); const press=pressFeatures.map(({slug})=>({url:`${base}/media/${slug}`,lastModified:new Date(),changeFrequency:"monthly" as const,priority:.7})); const expertise=expertisePosts.map(({slug})=>({url:`${base}/expertise/${slug}`,lastModified:new Date(),changeFrequency:"monthly" as const,priority:.75})); return [...pages,...press,...expertise]; }
