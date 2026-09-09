@@ -1844,6 +1844,70 @@ footer {
   font-size: 0.65rem;
   color: #777;
 }
+/* Dr. Nguyen's living signal system */
+.brand-signal {
+  position: absolute;
+  z-index: 8;
+  top: calc(100vh + 130px);
+  left: 2.1vw;
+  width: 24px;
+  height: min(2650px, 245vh);
+  pointer-events: none;
+  opacity: 0.9;
+}
+.brand-signal svg { width: 100%; height: 100%; overflow: visible; }
+.brand-signal path { fill: none; stroke-width: 1.25; vector-effect: non-scaling-stroke; }
+.signal-ghost { stroke: color-mix(in srgb, var(--gold) 25%, transparent); }
+.signal-live { stroke: var(--gold); filter: drop-shadow(0 0 5px rgba(184,135,74,.36)); }
+.signal-pulse { position: absolute; left: 8px; top: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 6px rgba(184,135,74,.12), 0 0 20px rgba(184,135,74,.6); }
+
+.guide-steps .topic-grid { position: relative; }
+.guide-steps .topic-grid::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: linear-gradient(90deg,var(--gold),var(--teal),var(--gold)); transform-origin: left; animation: signalSweep 7s ease-in-out infinite; }
+.guide-steps .topic-card { position: relative; transition: background-color .35s ease, transform .35s ease; }
+.guide-steps .topic-card::after { content: ""; position: absolute; left: 0; top: -6px; width: 11px; height: 11px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 7px var(--cream); transition: transform .35s ease, box-shadow .35s ease; }
+.guide-steps .topic-card:hover { transform: translateY(-7px); background: rgba(255,255,255,.48); }
+.guide-steps .topic-card:hover::after { transform: scale(1.28); box-shadow: 0 0 0 7px var(--cream),0 0 24px rgba(184,135,74,.6); }
+@keyframes signalSweep { 0%,100%{transform:scaleX(.18);opacity:.4} 50%{transform:scaleX(1);opacity:1} }
+
+.philosophy-journey { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(4rem,9vw,10rem); max-width: none; background: #071713; color: #fff; overflow: hidden; }
+.philosophy-journey > header { position: sticky; top: 138px; align-self: start; }
+.philosophy-journey > header h2 { font-size: clamp(3.3rem,5.4vw,6.6rem); line-height: .94; }
+.philosophy-journey > header > p:last-child { max-width: 480px; color: rgba(255,255,255,.65); font: 1.05rem/1.7 Georgia,serif; }
+.journey-track { position: relative; padding: 8vh 0; }
+.journey-line { position: absolute; top: 0; bottom: 0; left: 31px; width: 1px; background: rgba(255,255,255,.14); overflow: hidden; }
+.journey-line span { display: block; width: 100%; height: 42%; background: linear-gradient(transparent,var(--gold),transparent); animation: journeySignal 5s ease-in-out infinite; }
+@keyframes journeySignal { 0%{transform:translateY(-100%)} 100%{transform:translateY(340%)} }
+.journey-step { position: relative; display: grid; grid-template-columns: 64px 1fr; gap: 2rem; min-height: 42vh; align-content: center; padding: 3rem 0; }
+.journey-step > span { position: relative; z-index: 1; display: grid; place-items: center; width: 64px; height: 64px; border: 1px solid rgba(239,210,166,.45); border-radius: 50%; background: #071713; color: #efd2a6; font-size: .68rem; letter-spacing: .12em; box-shadow: 0 0 0 10px #071713; }
+.journey-step h3 { margin: 0 0 1rem; font-size: clamp(2rem,3vw,3.9rem); color: #fff; }
+.journey-step p { max-width: 610px; color: rgba(255,255,255,.66); font-size: 1.02rem; }
+
+.patient-one-feature { grid-column: 1/-1; display: grid; grid-template-columns: 90px 1fr .55fr; gap: clamp(2rem,5vw,6rem); align-items: center; margin: 5rem 0; padding: clamp(3rem,6vw,6rem); background: #0a1e19; color: #fff; box-shadow: 0 30px 80px rgba(17,36,31,.15); }
+.patient-one-index { align-self: stretch; display: flex; flex-direction: column; align-items: center; gap: 1rem; color: #efd2a6; font-size: .72rem; letter-spacing: .16em; }
+.patient-one-index i { width: 1px; flex: 1; min-height: 150px; background: linear-gradient(var(--gold),transparent); }
+.patient-one-feature h2 { font-size: clamp(3rem,5vw,5.8rem); line-height: .96; }
+.patient-one-feature > div:nth-child(2) > p:last-child { max-width: 720px; color: rgba(255,255,255,.68); font: 1.08rem/1.75 Georgia,serif; }
+.patient-one-feature aside { display: flex; flex-direction: column; border-top: 1px solid rgba(255,255,255,.25); }
+.patient-one-feature aside span { padding: 0 0 1rem; color: #efd2a6; font-size: .65rem; letter-spacing: .16em; text-transform: uppercase; }
+.patient-one-feature aside b { padding: 1rem 0; border-top: 1px solid rgba(255,255,255,.18); font: 400 1.45rem Georgia,serif; }
+
+.evidence-lens { display: grid; grid-template-columns: .7fr 1.3fr; gap: 7vw; padding: clamp(4rem,7vw,8rem) 6vw; background: var(--gold); color: #17130f; }
+.evidence-lens > header { position: sticky; top: 130px; align-self: start; }
+.evidence-lens .eyebrow { color: #17130f; }
+.evidence-lens h2 { font-size: clamp(3rem,4.7vw,5.6rem); line-height: .96; }
+.evidence-lens h2 em { color: #fff; }
+.evidence-lens > div { border-top: 1px solid rgba(23,19,15,.35); }
+.evidence-lens article { display: grid; grid-template-columns: 42px .46fr 1fr; gap: 1.4rem; padding: 1.65rem 0; border-bottom: 1px solid rgba(23,19,15,.35); }
+.evidence-lens article > span { padding-top: .35rem; font-size: .65rem; letter-spacing: .12em; }
+.evidence-lens article h3 { margin: 0; font-size: 1.55rem; }
+.evidence-lens article p { margin: 0; line-height: 1.6; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .brand-signal { display: none; }
+}
+
 @media (max-width: 1100px) {
   .hero-content {
     width: 68%;
@@ -2202,4 +2266,17 @@ footer {
   .expertise-article-body aside { position: static; }
   .expertise-next { flex-direction: column; }
   .expertise-next a:last-child { text-align: left; }
+  .brand-signal { display: none; }
+  .philosophy-journey { grid-template-columns: 1fr; gap: 1rem; }
+  .philosophy-journey > header { position: static; }
+  .journey-track { padding: 1rem 0 0; }
+  .journey-step { grid-template-columns: 52px 1fr; gap: 1.2rem; min-height: 0; padding: 2.4rem 0; }
+  .journey-step > span { width: 52px; height: 52px; }
+  .journey-line { left: 25px; }
+  .patient-one-feature { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
+  .patient-one-index { display: none; }
+  .evidence-lens { grid-template-columns: 1fr; }
+  .evidence-lens > header { position: static; }
+  .evidence-lens article { grid-template-columns: 32px 1fr; }
+  .evidence-lens article p { grid-column: 2; }
 }

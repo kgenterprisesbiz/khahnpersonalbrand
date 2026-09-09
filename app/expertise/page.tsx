@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Shell } from "@/components/site-shell";
 import { Reveal } from "@/components/reveal";
 import { expertisePosts } from "@/lib/expertise-posts";
+import { PhilosophyJourney } from "@/components/philosophy-journey";
 
 export const metadata: Metadata = {
   title: "Expertise — Dr. Khanh Nguyen, MD",
@@ -17,15 +18,6 @@ const pillars = [
   ["05", "Ethics & evidence", "How responsible clinicians discuss risk, regulation, uncertainty, and emerging treatment."],
   ["06", "The human side", "Personal perspective on resilience, burnout, reinvention, and practicing medicine differently."],
 ];
-const principles = [
-  ["01", "Ask a better question", "Look beyond the diagnosis to understand what is driving dysfunction at the cellular and whole-person level."],
-  ["02", "See one connected body", "Sleep, stress, metabolism, hormones, nutrition, movement, and cellular signaling do not operate in isolation."],
-  ["03", "Begin with the phenotype", "The person, their biology, history, testing, and goals come before any product or trending treatment."],
-  ["04", "Build the foundation", "Advanced therapies cannot do their best work when the conditions around them continually undermine healing."],
-  ["05", "Respect the sequence", "The right therapy at the wrong time—or in the wrong order—may produce less benefit and more disappointment."],
-  ["06", "Make the patient a partner", "Clear education, honest limits, and shared decisions are not extras. They are part of responsible care."],
-];
-
 export default function Expertise() {
   const [featured, ...articles] = expertisePosts;
   return <Shell><main>
@@ -42,23 +34,7 @@ export default function Expertise() {
       <div><p className="eyebrow">Her point of view</p><h2>Curious about what’s possible.<br/><em>Honest about what’s proven.</em></h2></div>
       <p>Regenerative medicine does not need more noise. It needs physicians willing to translate emerging science, name its limits, and help people ask better questions before they make consequential decisions.</p>
       </section>
-      <section className="guide-steps section expertise-principles">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">How Dr. Nguyen thinks about medicine</p>
-            <h2>A philosophy before a treatment plan</h2>
-          </div>
-        </div>
-        <div className="topic-grid six">
-          {principles.map(([number, title, description], i) => (
-            <Reveal className="topic-card" key={title} delay={(i % 3) * 0.06}>
-              <span>{number}</span>
-              <h3>{title}</h3>
-              <p>{description}</p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <PhilosophyJourney />
     <section className="expertise-pillars section">
       <div className="section-heading"><div><p className="eyebrow">What she follows</p><h2>Six conversations shaping the field.</h2></div></div>
       <div className="expertise-pillar-grid">{pillars.map((pillar,index)=><Reveal className="expertise-pillar" key={pillar[1]} delay={(index%3)*.06}><span>{pillar[0]}</span><h3>{pillar[1]}</h3><p>{pillar[2]}</p></Reveal>)}</div>

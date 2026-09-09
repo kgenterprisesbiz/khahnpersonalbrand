@@ -54,6 +54,15 @@ export default function About() {
             “My goal isn’t to promise youth—it’s to help your body function
             better, for longer.”
           </blockquote>
+          <Reveal className="patient-one-feature">
+            <div className="patient-one-index"><span>01</span><i /></div>
+            <div>
+              <p className="eyebrow light">Patient number one</p>
+              <h2>Curiosity, tested<br /><em>against responsibility.</em></h2>
+              <p>Before an approach enters her practice, Dr. Nguyen studies the mechanism, weighs the evidence and its limits, and experiences the process personally. New is not enough. Impressive is not enough. It must make sense, meet her safety standard, and belong in the right sequence.</p>
+            </div>
+            <aside><span>Her adoption standard</span><b>Mechanism</b><b>Evidence</b><b>Safety</b><b>Sequence</b></aside>
+          </Reveal>
           <Reveal>
             <p>
               Eventually, healing became deeply personal. Dr. Nguyen faced her
@@ -63,14 +72,6 @@ export default function About() {
               the cell fail in the first place? She stopped looking only at the
               diagnosis and began looking upstream at the conditions that allow
               the body to heal, repair, and adapt.
-            </p>
-            <p>
-              She became what she calls “patient number one”—studying the
-              science, experiencing the approaches personally, and refusing to
-              recommend something simply because it was new or impressive. Her
-              standard remains practical: understand the mechanism, examine the
-              evidence and its limits, put safety first, and ask whether the
-              approach is responsible enough for the people she loves.
             </p>
             <p>
               That shift led her beyond crisis care and into regenerative and

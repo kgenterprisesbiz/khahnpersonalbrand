@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CTA, Shell } from "@/components/site-shell";
 import { Reveal } from "@/components/reveal";
+import { BrandSignal } from "@/components/brand-signal";
 const conversations = [
   [
     "Optimization Academy × ISSCA",
@@ -39,6 +40,7 @@ export default function Home() {
   return (
     <Shell>
       <main>
+        <BrandSignal />
         <section className="hero">
           <img
             src="/dr-khanh-hero.jpg"

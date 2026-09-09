@@ -5,6 +5,12 @@ export type ExpertisePost = {
   category: string;
   readTime: string;
   perspective: string;
+  lens: {
+    established: string;
+    emerging: string;
+    unknown: string;
+    ask: string;
+  };
   body: string[];
   sources?: { label: string; url: string }[];
 };
@@ -16,6 +22,12 @@ export const expertisePosts: ExpertisePost[] = [
     dek: "The real science behind one of longevity medicine’s most talked-about therapies.",
     category: "Plasma Exchange", readTime: "7 min",
     perspective: "Promising does not mean proven—and uncertainty is not the same as irrelevance.",
+    lens: {
+      established: "Plasma exchange is an established medical procedure for specific clinical indications, with known operational and safety requirements.",
+      emerging: "Researchers are studying changes in inflammatory, proteomic, and biological-age markers after different plasma-based interventions.",
+      unknown: "Current evidence does not establish that these approaches extend human life or reliably improve long-term function in healthy people.",
+      ask: "Which procedure is actually being offered, for what outcome, with what evidence, screening, monitoring, and physician oversight?",
+    },
     body: [
       "The phrase “young blood” makes for an irresistible headline. It also makes careful science harder to hear. Plasma-based longevity research is neither a fountain-of-youth story nor something that should be dismissed because the language surrounding it can sound sensational.",
       "Plasma carries proteins, signaling molecules, antibodies, and other factors throughout the body. Researchers are studying whether changing that circulating environment may influence inflammation and biomarkers associated with aging. Human research has produced intriguing signals, but biomarkers are not the same thing as proof of longer life or better long-term function.",
@@ -32,6 +44,12 @@ export const expertisePosts: ExpertisePost[] = [
     dek: "What peptide therapy is designed to do—and why medical supervision matters.",
     category: "Peptide Therapy", readTime: "6 min",
     perspective: "A trending protocol is not a treatment plan.",
+    lens: {
+      established: "Some peptide-based medications are FDA approved for defined uses and have established prescribing information.",
+      emerging: "A broader group of peptides is being studied for repair, metabolism, immune signaling, and other potential applications.",
+      unknown: "For many promoted compounds, robust human efficacy, optimal dosing, long-term safety, and product quality remain uncertain.",
+      ask: "What is the regulatory status, evidence level, source, dose, monitoring plan, and reason this particular peptide fits this particular person?",
+    },
     body: [
       "Peptides are short chains of amino acids that can act as signals in the body. That broad definition is part of the problem: “peptide therapy” can sound like one treatment when it actually describes many different compounds, mechanisms, evidence levels, and regulatory circumstances.",
       "Some peptide-based medications are FDA approved for specific uses. Other substances promoted online are compounded or unapproved and may have limited human safety data. Those categories should never be blurred for the sake of a cleaner sales pitch.",
@@ -48,6 +66,12 @@ export const expertisePosts: ExpertisePost[] = [
     dek: "The questions patients should ask before excitement outruns evidence.",
     category: "Regenerative Medicine", readTime: "8 min",
     perspective: "Innovation and caution belong in the same room.",
+    lens: {
+      established: "Product identity, source, processing, sterility, intended use, and regulatory status materially affect risk.",
+      emerging: "Cellular and extracellular-vesicle research continues to explore potential regenerative mechanisms and clinical applications.",
+      unknown: "A promising mechanism does not establish that a commercial product is safe or effective for the condition being marketed.",
+      ask: "What exactly is being administered, is it approved for this use, what human evidence exists, and what adverse events have been reported?",
+    },
     body: [
       "Few phrases in medicine carry more hope—or more confusion—than “stem cells.” Patients may encounter the same words used to describe approved products, investigational research, autologous procedures, and unapproved commercial treatments. Those are not equivalent.",
       "The FDA has repeatedly warned consumers about unapproved regenerative products marketed for a wide range of diseases and conditions. It has also stated that there are currently no FDA-approved exosome products. That regulatory reality belongs near the beginning of the conversation, not buried in fine print.",
@@ -64,6 +88,12 @@ export const expertisePosts: ExpertisePost[] = [
     dek: "Why scientists study the underlying biology of aging—and what that framework can and cannot tell us.",
     category: "Longevity Science", readTime: "7 min",
     perspective: "Aging is a network of interacting processes, not one switch waiting to be flipped.",
+    lens: {
+      established: "Aging involves multiple interacting biological processes associated with declining resilience and increased disease risk.",
+      emerging: "Researchers are testing whether targeting individual or combined hallmarks can improve meaningful measures of healthspan.",
+      unknown: "No single hallmark, marker, or intervention currently proves that an individual has meaningfully slowed aging.",
+      ask: "Does the intervention improve function, symptoms, risk, or quality of life—not merely move an interesting laboratory number?",
+    },
     body: [
       "The hallmarks of aging give researchers a way to organize the biological changes associated with getting older—changes involving cellular senescence, mitochondrial function, genomic stability, protein maintenance, stem-cell exhaustion, and more.",
       "This framework matters because many age-related diseases share underlying biology. Studying those shared mechanisms may help researchers understand why different conditions often appear together and where future interventions might have broader effects.",
@@ -80,6 +110,12 @@ export const expertisePosts: ExpertisePost[] = [
     dek: "What a better-looking number can—and cannot—tell you about living better for longer.",
     category: "Healthspan", readTime: "6 min",
     perspective: "A number matters only when we understand what it represents.",
+    lens: {
+      established: "Validated biomarkers can reveal risk, track physiology, and help clinicians monitor response to treatment.",
+      emerging: "Multi-omics data and biological-age tools may help detect patterns that conventional snapshots miss.",
+      unknown: "A better score does not automatically mean a person will feel better, avoid disease, or live longer.",
+      ask: "Is the test validated for this use, is the change reproducible, and does it connect to an outcome that matters to the patient?",
+    },
     body: [
       "Longevity medicine is full of measurements: inflammatory markers, metabolic data, biological-age estimates, cardiovascular indicators, body composition, and more. Good data can reveal patterns that symptoms alone may miss.",
       "The trap is treating every movement in a biomarker as a meaningful health outcome. A change may be statistically interesting without proving that someone will feel better, function better, avoid disease, or live longer.",
@@ -92,6 +128,12 @@ export const expertisePosts: ExpertisePost[] = [
     dek: "Medicine trained me to endure almost anything. It did not teach me when to stop.",
     category: "Personal Perspective", readTime: "5 min",
     perspective: "Familiar is not the same as healthy.",
+    lens: {
+      established: "Chronic occupational stress and burnout can affect wellbeing, performance, relationships, and physical health.",
+      emerging: "Organizations are exploring structural, cultural, and individual approaches to prevent burnout and support recovery.",
+      unknown: "There is no universal reset; the source of strain and the path forward differ for every person and workplace.",
+      ask: "What has become normalized that you would never recommend to someone in your care?",
+    },
     body: [
       "For years, I treated exhaustion like evidence that I was doing the work correctly. Long shifts. High stakes. One more patient, and then one more after that.",
       "Burnout is easy to normalize in medicine because everyone around you is tired, too. The culture can reward endurance long after endurance stops being admirable and starts becoming dangerous.",
