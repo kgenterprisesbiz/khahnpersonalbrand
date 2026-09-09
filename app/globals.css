@@ -832,8 +832,8 @@ blockquote {
   font: 1.08rem/1.6 Georgia;
 }
 
-/* Keep the complete hero compositions visible on wide Vercel/Next viewports.
-   The source artwork already includes intentional negative space for copy. */
+/* Render desktop hero artwork as a section background. This avoids percentage-
+   height replaced elements collapsing when Next/Vercel calculates the layout. */
 @media (min-width: 801px) {
   .hero,
   .page-hero,
@@ -841,36 +841,44 @@ blockquote {
   .media-hero {
     min-height: calc(100vh - 78px);
     min-height: calc(100svh - 78px);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
   }
 
-  .hero > img {
-    inset: 0;
-    width: 100%;
-    height: calc(100vh - 78px);
-    height: calc(100svh - 78px);
-    min-height: calc(100vh - 78px);
-    min-height: calc(100svh - 78px);
-    object-fit: contain;
-    object-position: right center;
+  .hero {
+    background-image: url("/dr-khanh-hero.png");
   }
 
-  .page-hero,
-  .speaking-hero,
+  .about-hero {
+    background-image: url("/dr-khanh-about.png");
+  }
+
+  .speaking-hero {
+    background-image: url("/dr-khanh-media-hero.png");
+  }
+
   .media-hero {
-    background: #071713;
+    background-image: url("/dr-khanh-speaking-hero.png");
   }
 
-  .page-hero img,
+  .expertise-hero {
+    background-image: url("/dr-khanh-expertise-hero.png");
+  }
+
+  .contact-hero {
+    background-image: url("/dr-khanh-contact-hero.png");
+  }
+
+  .hero > img,
+  .page-hero > img,
   .speaking-hero > img,
   .media-hero > img {
-    inset: 0;
-    width: 100%;
-    height: calc(100vh - 78px);
-    height: calc(100svh - 78px);
-    min-height: calc(100vh - 78px);
-    min-height: calc(100svh - 78px);
-    object-fit: contain;
-    object-position: right center;
+    display: none;
+  }
+
+  .hero::before {
+    display: none;
   }
 }
 .media-kit-hero {
