@@ -2346,3 +2346,34 @@ footer {
     background: linear-gradient(0deg, rgba(7, 15, 14, 0.99) 0%, rgba(7, 15, 14, 0.94) 48%, rgba(7, 15, 14, 0.08) 82%);
   }
 }
+
+/* Desktop homepage composition: a quieter, right-anchored portrait with a
+   dedicated copy field so the subject and clinic identity remain visible. */
+@media (min-width: 801px) {
+  .hero {
+    min-height: calc(100vh - 78px);
+    background: #10231f;
+  }
+  .hero > img {
+    width: min(66vw, 1120px);
+    max-width: none;
+    margin-left: auto;
+  }
+  .hero-content {
+    width: min(44%, 740px);
+    padding-right: 2vw;
+  }
+  .hero h1 > span {
+    white-space: normal;
+  }
+  .hero-shade {
+    background: linear-gradient(
+      90deg,
+      #10231f 0%,
+      rgba(16, 35, 31, 0.98) 25%,
+      rgba(16, 35, 31, 0.72) 38%,
+      rgba(16, 35, 31, 0.22) 48%,
+      transparent 60%
+    );
+  }
+}
