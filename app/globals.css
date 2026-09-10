@@ -2219,6 +2219,34 @@ footer {
   }
 }
 
+/* Desktop editorial heroes follow the photograph's native ratio.
+   The container can no longer crop the image to fit the viewport. */
+@media (min-width: 801px) {
+  .about-hero,
+  .media-hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1672 / 941;
+  }
+  .about-hero > img,
+  .media-hero > img {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  .about-hero > div,
+  .media-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
 @media (max-width: 800px) {
   .expertise-manifesto,
   .expertise-featured,
