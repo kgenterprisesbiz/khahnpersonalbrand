@@ -2249,6 +2249,261 @@ footer {
     transform: translateY(-50%);
   }
 }
+
+/* Final mobile cascade — intentionally last. */
+@media (max-width: 800px) {
+  .hero,
+  .about-hero,
+  .media-hero,
+  .speaking-hero,
+  .press-room-hero,
+  .media-kit-hero {
+    display: block;
+    height: auto;
+    min-height: 0;
+    background: #0b201b;
+    overflow: hidden;
+  }
+  .hero > img,
+  .about-hero > img,
+  .media-hero > img,
+  .speaking-hero > img,
+  .press-room-hero > img,
+  .media-kit-hero > img {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
+    filter: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .hero-shade,
+  .about-hero::after,
+  .media-hero-shade,
+  .speaking-hero-shade,
+  .press-room-hero-shade,
+  .media-kit-hero-shade {
+    display: none;
+  }
+  .hero-content,
+  .about-hero > div,
+  .media-hero-content,
+  .speaking-hero-content,
+  .press-room-hero-content,
+  .media-kit-hero-content {
+    position: relative;
+    inset: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    padding: 2.75rem 1.25rem 3.25rem;
+    background: #0b201b;
+  }
+  .media-hero-content,
+  .press-room-hero-content {
+    background: #07141d;
+  }
+  .hero h1,
+  .about-hero h1,
+  .media-hero h1,
+  .speaking-hero h1,
+  .press-room-hero h1,
+  .media-kit-hero h1,
+  .simple-hero h1 {
+    font-size: clamp(2.65rem, 11.5vw, 3.65rem);
+    line-height: 0.98;
+  }
+  .vertical-note {
+    display: none;
+  }
+}
+
+/* Mobile audit — stacked media, readable type, and zero horizontal collisions. */
+@media (max-width: 800px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  main,
+  section,
+  article,
+  header,
+  footer,
+  div {
+    min-width: 0;
+  }
+  img,
+  iframe,
+  video {
+    max-width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  .hero,
+  .about-hero,
+  .media-hero,
+  .speaking-hero,
+  .press-room-hero,
+  .media-kit-hero {
+    display: block;
+    height: auto;
+    min-height: 0;
+    background: #0b201b;
+    overflow: hidden;
+  }
+  .hero > img,
+  .about-hero > img,
+  .media-hero > img,
+  .speaking-hero > img,
+  .press-room-hero > img,
+  .media-kit-hero > img {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
+    filter: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .hero-shade,
+  .about-hero::after,
+  .media-hero-shade,
+  .speaking-hero-shade,
+  .press-room-hero-shade,
+  .media-kit-hero-shade {
+    display: none;
+  }
+  .hero-content,
+  .about-hero > div,
+  .media-hero-content,
+  .speaking-hero-content,
+  .press-room-hero-content,
+  .media-kit-hero-content {
+    position: relative;
+    inset: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    padding: 2.75rem 1.25rem 3.25rem;
+    background: #0b201b;
+    color: #fff;
+  }
+  .media-hero-content,
+  .press-room-hero-content {
+    background: #07141d;
+  }
+  .hero h1,
+  .about-hero h1,
+  .media-hero h1,
+  .speaking-hero h1,
+  .press-room-hero h1,
+  .media-kit-hero h1,
+  .simple-hero h1 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(2.65rem, 11.5vw, 3.65rem);
+    line-height: 0.98;
+  }
+  .hero h1 > span,
+  .hero h1 em,
+  .about-hero h1 span,
+  .about-hero h1 em,
+  .media-hero h1 span,
+  .media-hero h1 em,
+  .speaking-hero h1 span,
+  .speaking-hero h1 em {
+    white-space: normal;
+  }
+  .hero-copy,
+  .media-hero-copy,
+  .speaking-hero-copy,
+  .press-room-hero-content > p:not(.eyebrow),
+  .media-kit-hero-content > p:not(.eyebrow) {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .vertical-note {
+    display: none;
+  }
+  .hero .button-row,
+  .media-hero .button-row,
+  .speaking-hero .button-row,
+  .press-room-hero .button-row,
+  .media-kit-hero .button-row {
+    width: 100%;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .hero .button,
+  .media-hero .button,
+  .speaking-hero .button,
+  .press-room-hero .button,
+  .media-kit-hero .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .press-room-proof {
+    position: relative;
+    inset: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .press-strip {
+    padding: 1.5rem 1.25rem;
+  }
+  .press-strip > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.25rem;
+  }
+  .press-strip b {
+    line-height: 1.35;
+  }
+  .section,
+  .cta-band,
+  footer {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+  .timeline > div,
+  .credentials-strip,
+  .press-room-proof {
+    grid-template-columns: 1fr 1fr;
+  }
+  .booking-actions,
+  .press-notes-next,
+  .expertise-next {
+    align-items: stretch;
+  }
+  .booking-actions .button,
+  .cta-band .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 @media (max-width: 800px) {
   .about-hero,
   .media-hero {
@@ -2376,5 +2631,77 @@ footer {
       rgba(16, 35, 31, 0.1) 56%,
       transparent 64%
     );
+  }
+}
+
+/* Mobile rules must remain below every desktop/homepage override. */
+@media (max-width: 800px) {
+  .hero,
+  .about-hero,
+  .media-hero,
+  .speaking-hero,
+  .press-room-hero,
+  .media-kit-hero {
+    display: block;
+    height: auto;
+    min-height: 0;
+    background: #0b201b;
+  }
+  .hero > img,
+  .about-hero > img,
+  .media-hero > img,
+  .speaking-hero > img,
+  .press-room-hero > img,
+  .media-kit-hero > img {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
+    filter: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .hero-shade,
+  .about-hero::after,
+  .media-hero-shade,
+  .speaking-hero-shade,
+  .press-room-hero-shade,
+  .media-kit-hero-shade {
+    display: none;
+  }
+  .hero-content,
+  .about-hero > div,
+  .media-hero-content,
+  .speaking-hero-content,
+  .press-room-hero-content,
+  .media-kit-hero-content {
+    position: relative;
+    inset: auto;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    padding: 2.75rem 1.25rem 3.25rem;
+    background: #0b201b;
+  }
+  .media-hero-content,
+  .press-room-hero-content {
+    background: #07141d;
+  }
+  .hero h1,
+  .about-hero h1,
+  .media-hero h1,
+  .speaking-hero h1,
+  .press-room-hero h1,
+  .media-kit-hero h1,
+  .simple-hero h1 {
+    font-size: clamp(2.65rem, 11.5vw, 3.65rem);
+    line-height: 0.98;
+  }
+  .vertical-note {
+    display: none;
   }
 }
