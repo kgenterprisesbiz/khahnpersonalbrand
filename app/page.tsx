@@ -43,7 +43,7 @@ export default function Home() {
         <BrandSignal />
         <section className="hero">
           <img
-            src="/dr-khanh-hero.jpg"
+            src="/dr-khanh-hero.png"
             alt="Dr. Khanh Nguyen standing confidently in her Austin clinic"
           />
           <div className="hero-shade" />
@@ -193,7 +193,7 @@ export default function Home() {
             </p>
             <a
               className="text-link"
-              href="https://austinregen.com/schedule-an-appointment/"
+              href="https://austinregen.com/"
             >
               Visit Austin Regenerative Therapy →
             </a>
