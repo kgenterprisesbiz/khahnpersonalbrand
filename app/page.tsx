@@ -43,7 +43,7 @@ export default function Home() {
         <BrandSignal />
         <section className="hero">
           <img
-            src="/dr-khanh-home-hero.jpg"
+            src="/dr-khanh-home-hero-wide.jpg"
             alt="Dr. Khanh Nguyen standing confidently in her Austin clinic"
           />
           <div className="hero-shade" />
