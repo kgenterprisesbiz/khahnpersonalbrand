@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://dr-khanh-nguyen.kimgarstbiz.chatgpt.site"),
   title: "Dr. Khanh Nguyen, MD — Physician, Speaker & Regenerative Medicine Pioneer",
   description: "Dr. Khanh Nguyen is a physician, national speaker, and founder of Austin Regenerative Therapy. Book her for speaking, podcasts, or media interviews.",
-  openGraph: { title: "Dr. Khanh Nguyen, MD", description: "Physician, speaker, and regenerative medicine pioneer.", images: ["/dr-khanh-nguyen.jpg"] },
-  twitter: { card: "summary_large_image", images: ["/dr-khanh-nguyen.jpg"] },
+  openGraph: { title: "Dr. Khanh Nguyen, MD", description: "Physician, speaker, and regenerative medicine pioneer.", images: ["/dr-khanh-nguyen.png"] },
+  twitter: { card: "summary_large_image", images: ["/dr-khanh-nguyen.png"] },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
