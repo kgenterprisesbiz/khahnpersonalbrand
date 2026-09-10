@@ -17,11 +17,11 @@ export default function About() {
   return (
     <Shell>
       <main>
-        <section className="page-hero photo about-hero">
-          <img
-            src="/dr-khanh-about.png"
-            alt="Dr. Khanh Nguyen in a bright consultation room at Austin Regenerative Therapy"
-          />
+        <section
+          className="page-hero photo about-hero"
+          style={{ backgroundImage: "url('/dr-khanh-about.png')" }}
+          aria-label="Dr. Khanh Nguyen in a bright consultation room at Austin Regenerative Therapy"
+        >
           <div>
             <h1>
               <span>When Medicine Becomes Personal,</span>
