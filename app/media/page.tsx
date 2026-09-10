@@ -75,7 +75,7 @@ export default function Media() {
       <main>
         <section className="simple-hero media-hero">
           <img
-            src="/dr-khanh-speaking-hero.jpg"
+            src="/dr-khanh-speaking-hero.png"
             alt="Dr. Khanh Nguyen in an editorial interview setting"
           />
           <div className="media-hero-shade" />
@@ -128,9 +128,6 @@ export default function Media() {
                   {item.tag} · {item.show}
                 </p>
                 <h2>{item.title}</h2>
-                <span className="watch-here">
-                  Watch the full conversation here
-                </span>
               </Reveal>
             ))}
           </div>
