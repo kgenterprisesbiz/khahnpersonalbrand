@@ -75,7 +75,7 @@ export default function Media() {
       <main>
         <section className="simple-hero media-hero">
           <img
-            src="/dr-khanh-speaking-hero.png"
+            src="/dr-khanh-speaking-hero.jpg"
             alt="Dr. Khanh Nguyen in an editorial interview setting"
           />
           <div className="media-hero-shade" />
