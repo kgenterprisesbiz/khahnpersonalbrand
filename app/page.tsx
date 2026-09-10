@@ -73,14 +73,28 @@ export default function Home() {
           <span className="vertical-note">AUSTIN · TEXAS</span>
         </section>
         <section className="press-strip">
-          <span>Featured conversations</span>
-          <div>
-            <b>BEN GREENFIELD LIFE</b>
-            <b>THE DR. POMPA PODCAST</b>
-            <b>LONGEVITY OPTIMIZATION</b>
-            <b>IN HEELS</b>
-            <b>ISSCA</b>
-            <b>SSRP</b>
+          <span>As seen on</span>
+          <div className="press-strip-outlets">
+            <article>
+              <b>Ben Greenfield Life</b>
+              <small>Performance & longevity</small>
+            </article>
+            <article>
+              <b>The Dr. Pompa Podcast</b>
+              <small>Cellular health & anti-aging</small>
+            </article>
+            <article>
+              <b>Longevity Optimization</b>
+              <small>With Kayla Barnes-Lentz</small>
+            </article>
+            <article>
+              <b>In Heels</b>
+              <small>With Keni Silva</small>
+            </article>
+            <article>
+              <b>ISSCA</b>
+              <small>World Congress faculty</small>
+            </article>
           </div>
         </section>
         <section className="clarity section">
