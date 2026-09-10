@@ -548,6 +548,9 @@ em {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 12%;
 }
 .page-hero img {
   position: absolute;
@@ -786,6 +789,9 @@ blockquote {
   padding: 0;
   overflow: hidden;
   background: #0c1821;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
   color: #fff;
 }
 .media-hero > img {
@@ -1909,6 +1915,9 @@ footer {
   .media-hero > img {
     object-position: 68% top;
   }
+  .media-hero {
+    background-position: 68% top;
+  }
   .media-hero-shade {
     background:
       linear-gradient(
@@ -2191,6 +2200,9 @@ footer {
   }
   .page-hero img {
     object-position: 58% top;
+  }
+  .page-hero {
+    background-position: 58% top;
   }
   blockquote {
     margin: 4rem 0;
