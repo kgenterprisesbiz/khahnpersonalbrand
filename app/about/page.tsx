@@ -19,7 +19,7 @@ export default function About() {
       <main>
         <section className="page-hero photo about-hero">
           <img
-            src="/dr-khanh-about.jpg"
+            src="/dr-khanh-about.png"
             alt="Dr. Khanh Nguyen in a bright consultation room at Austin Regenerative Therapy"
           />
           <div>
@@ -58,7 +58,7 @@ export default function About() {
             <div className="patient-one-index"><span>01</span><i /></div>
             <div>
               <p className="eyebrow light">Patient number one</p>
-              <h2>Curiosity, tested<br /><em>against responsibility.</em></h2>
+              <h2>Curiosity, tested <em>against responsibility.</em></h2>
               <p>Before an approach enters her practice, Dr. Nguyen studies the mechanism, weighs the evidence and its limits, and experiences the process personally. New is not enough. Impressive is not enough. It must make sense, meet her safety standard, and belong in the right sequence.</p>
             </div>
             <aside><span>Her adoption standard</span><b>Mechanism</b><b>Evidence</b><b>Safety</b><b>Sequence</b></aside>
