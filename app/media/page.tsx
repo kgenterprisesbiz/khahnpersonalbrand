@@ -73,11 +73,11 @@ export default function Media() {
   return (
     <Shell>
       <main>
-        <section
-          className="simple-hero media-hero"
-          style={{ backgroundImage: "url('/dr-khanh-speaking-hero.png')" }}
-          aria-label="Dr. Khanh Nguyen in an editorial interview setting"
-        >
+        <section className="simple-hero media-hero">
+          <img
+            src="/dr-khanh-speaking-hero.png"
+            alt="Dr. Khanh Nguyen in an editorial interview setting"
+          />
           <div className="media-hero-shade" />
           <div className="media-hero-content">
             <p className="eyebrow light">Media & press</p>
