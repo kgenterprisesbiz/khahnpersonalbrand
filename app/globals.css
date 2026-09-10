@@ -2355,12 +2355,12 @@ footer {
     background: #10231f;
   }
   .hero > img {
-    width: min(66vw, 1120px);
+    width: 100%;
     max-width: none;
-    margin-left: auto;
+    margin: 0;
   }
   .hero-content {
-    width: min(44%, 740px);
+    width: min(52%, 900px);
     padding-right: 2vw;
   }
   .hero h1 > span {
@@ -2370,10 +2370,11 @@ footer {
     background: linear-gradient(
       90deg,
       #10231f 0%,
-      rgba(16, 35, 31, 0.98) 25%,
-      rgba(16, 35, 31, 0.72) 38%,
-      rgba(16, 35, 31, 0.22) 48%,
-      transparent 60%
+      rgba(16, 35, 31, 0.99) 22%,
+      rgba(16, 35, 31, 0.88) 34%,
+      rgba(16, 35, 31, 0.42) 46%,
+      rgba(16, 35, 31, 0.1) 56%,
+      transparent 64%
     );
   }
 }
