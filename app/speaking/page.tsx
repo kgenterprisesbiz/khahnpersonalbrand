@@ -38,6 +38,12 @@ const topics = [
 
 const engagements = [
   [
+    "Peptide Therapy Certification 2026",
+    "SSRP Faculty · Orlando, Florida",
+    "September 11–12, 2026",
+    "https://ssrpinstitute.org/event-registration/peptide-therapy-certification-2026/",
+  ],
+  [
     "ISSCA Peptide World Conference",
     "Speaker · Lima, Peru",
     "May 2026",
@@ -219,7 +225,11 @@ export default function Speaking() {
               >
                 <span>{String(i + 1).padStart(2, "0")}</span>
                 <div>
-                  <h3>{item[0]}</h3>
+                  <h3>
+                    <a href={item[3]} target="_blank" rel="noreferrer">
+                      {item[0]} ↗
+                    </a>
+                  </h3>
                   <p>{item[1]}</p>
                 </div>
                 <time>{item[2]}</time>

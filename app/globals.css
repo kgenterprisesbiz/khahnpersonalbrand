@@ -1232,6 +1232,18 @@ blockquote {
   font-size: clamp(1.35rem, 2.3vw, 2.15rem);
   line-height: 1.1;
 }
+.engagement-row h3 a {
+  color: inherit;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+.engagement-row h3 a:hover,
+.engagement-row h3 a:focus-visible {
+  color: var(--green);
+  text-decoration-color: currentColor;
+}
 .press-row > a,
 .engagement-row > a {
   border-bottom: 1px solid;
